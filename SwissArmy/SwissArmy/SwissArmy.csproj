@@ -47,6 +47,8 @@
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="LINQ\LinqExtended.cs" />
+    <Compile Include="LINQ\ToEnumerable.cs" />
+    <Compile Include="LINQ\ToHashSet.cs" />
     <Compile Include="Mapping\Mapper.cs" />
     <Compile Include="MD5Hash.cs" />
     <Compile Include="ObjectCloner.cs" />

@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace SwissArmy.LINQ
 {
-    public static class LinqExtended
+    public static partial class LinqExtended
     {
-        public static HashSet<T> ToHashSet<T>(this IEnumerable<T> source)
-        {
-            if (source == null) throw new ArgumentNullException("source");
-            return new HashSet<T>(source);
-        }
-
         public static IEnumerable<Tuple<T, int>> IterWithIndex<T>(this IEnumerable<T> enumerable)
         {
             var i = 0;
@@ -22,18 +17,37 @@ namespace SwissArmy.LINQ
             }
         }
 
-        public static IEnumerable<T> ToEnumerable<T>(this T item)
+        public static IEnumerable<TSource> OrderBy<TSource, TKey>(this IEnumerable<TSource> list, Func<TSource,TKey> keySelector, ListSortDirection sort)
         {
-            yield return item;
+            if (sort == ListSortDirection.Ascending)
+            {
+                return list.OrderBy(keySelector);
+            }
+            return list.OrderByDescending(keySelector);
         }
 
-        public static IEnumerable<T> OrderBy<T>(this IEnumerable<T> list, T item)
+        public static IEnumerable<Tuple<TSource, TSource>> PairWise<TSource>(this IEnumerable<TSource> list)
         {
-            yield return item;
+            var i = 0;
+            TSource prior = default(TSource);
+            foreach (var source in list)
+            {
+                if (i != 0)
+                {
+                    yield return new Tuple<TSource, TSource>(prior, source);
+                }
+                prior = source;
+            }
+        }
+
+        public static IEnumerable<T> Append<T>(this IEnumerable<T> list, T item)
+        {
             foreach (var selectListItem in list)
             {
                 yield return selectListItem;
             }
+            yield return item;
+
         }
 
         public static IEnumerable<T> Prepend<T>(this IEnumerable<T> list, T item)
@@ -55,6 +69,7 @@ namespace SwissArmy.LINQ
 
         public static string ToCSV(this IEnumerable<string> collection)
         {
+            if (collection == null) throw new ArgumentNullException("collection");
             return String.Join(",", collection.ToArray());
         }
     }
