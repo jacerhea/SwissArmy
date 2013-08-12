@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Attributes\AttributeExtractor.cs" />
     <Compile Include="BinarySerializer.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
     <Compile Include="EmailValidator.cs" />
     <Compile Include="EnumHelper.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
