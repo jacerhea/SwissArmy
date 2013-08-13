@@ -48,6 +48,8 @@
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="LINQ\LinqExtended.cs" />
+    <Compile Include="LINQ\Prepend.cs" />
+    <Compile Include="LINQ\ToCSV.cs" />
     <Compile Include="LINQ\ToEnumerable.cs" />
     <Compile Include="LINQ\ToHashSet.cs" />
     <Compile Include="Mapping\Mapper.cs" />
@@ -59,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Collections\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LINQ\DistinctBy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

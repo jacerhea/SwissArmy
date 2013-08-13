@@ -47,17 +47,8 @@ namespace SwissArmy.LINQ
                 yield return selectListItem;
             }
             yield return item;
-
         }
 
-        public static IEnumerable<T> Prepend<T>(this IEnumerable<T> list, T item)
-        {
-            yield return item;
-            foreach (var selectListItem in list)
-            {
-                yield return selectListItem;
-            }
-        }
 
         public static IEnumerable<IEnumerable<T>> GroupList<T>(this IEnumerable<T> thisEnumerable, int sizeOfGroup)
         {
@@ -65,12 +56,6 @@ namespace SwissArmy.LINQ
                 .Select((x, i) => new { Index = i, Value = x })
                 .GroupBy(x => x.Index / sizeOfGroup)
                 .Select(x => x.Select(v => v.Value));
-        }
-
-        public static string ToCSV(this IEnumerable<string> collection)
-        {
-            if (collection == null) throw new ArgumentNullException("collection");
-            return String.Join(",", collection.ToArray());
         }
     }
 }
