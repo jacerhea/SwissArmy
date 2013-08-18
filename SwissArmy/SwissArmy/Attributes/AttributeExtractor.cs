@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -6,7 +7,7 @@ namespace SwissArmy.Attributes
 {
     public static class AttributeExtractor
     {
-        public static T GetAttributeFrom<T, TObject>(this TObject obj, Expression<Func<TObject, object>> propertyRefExpr) where T : class
+        public static T GetAttributeFromProp<T, TObject>(this TObject obj, Expression<Func<TObject, object>> propertyRefExpr) where T : Attribute
         {
             var body = propertyRefExpr.Body;
             var memberExpr = body as MemberExpression;
@@ -24,6 +25,16 @@ namespace SwissArmy.Attributes
 
             var attributes = memberExpr.Member.GetCustomAttributes(typeof(T), true);
             return attributes.Length > 0 ? attributes[0] as T : null;
+        }
+
+        public static TValue GetAttributeValueOrDefault<TAttribute, TValue>(this Type type, Func<TAttribute, TValue> valueSelector) where TAttribute : Attribute
+        {
+            var att = type.GetCustomAttributes(typeof(TAttribute), true).FirstOrDefault() as TAttribute;
+            if (att != null)
+            {
+                return valueSelector(att);
+            }
+            return default(TValue);
         }
     }
 }

@@ -57,6 +57,7 @@
     <Compile Include="ObjectCloner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property\PropertyExtractor.cs" />
+    <Compile Include="Property\PropertyHelpers.cs" />
     <Compile Include="XMLSerializer.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,7 @@ namespace SwissArmy.LINQ
             return list.OrderByDescending(keySelector);
         }
 
+
         public static IEnumerable<Tuple<TSource, TSource>> PairWise<TSource>(this IEnumerable<TSource> list)
         {
             var i = 0;
