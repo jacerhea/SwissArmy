@@ -8,5 +8,10 @@ namespace SwissArmy.Extensions
         {
             return dateTime >= datetime2 ? datetime2 : dateTime;
         }
+
+        public static DateTime NextDay(this DateTime date, DayOfWeek dayOfWeek)
+        {
+            
+        }
     }
 }
