@@ -41,14 +41,7 @@ namespace SwissArmy.LINQ
             }
         }
 
-        public static IEnumerable<T> Append<T>(this IEnumerable<T> list, T item)
-        {
-            foreach (var selectListItem in list)
-            {
-                yield return selectListItem;
-            }
-            yield return item;
-        }
+ 
 
 
         public static IEnumerable<IEnumerable<T>> GroupList<T>(this IEnumerable<T> thisEnumerable, int sizeOfGroup)
