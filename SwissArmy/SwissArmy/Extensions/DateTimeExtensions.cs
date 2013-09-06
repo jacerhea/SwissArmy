@@ -9,9 +9,9 @@ namespace SwissArmy.Extensions
             return dateTime >= datetime2 ? datetime2 : dateTime;
         }
 
-        public static DateTime Next(this DateTime date, DayOfWeek dayOfWeek)
-        {
-            return date.AddDays(date.DayOfWeek)
-        }
+        //public static DateTime Next(this DateTime date, DayOfWeek dayOfWeek)
+        //{
+        //    return date.AddDays(date.DayOfWeek)
+        //}
     }
 }

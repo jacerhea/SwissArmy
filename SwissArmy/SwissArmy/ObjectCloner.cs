@@ -2,7 +2,7 @@
 {
     public class ObjectCloner
     {
-        public static T CloneObject<T>(T entity)
+        public static T ToClone<T>(T entity)
         {
             var serializer = new BinarySerializer();
             var array = serializer.SerializeToBinary(entity);

@@ -50,7 +50,10 @@
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="LINQ\Append.cs" />
     <Compile Include="LINQ\Cartesian.cs" />
-    <Compile Include="LINQ\LinqExtended.cs" />
+    <Compile Include="LINQ\IterWithIndex.cs" />
+    <Compile Include="LINQ\GroupList.cs" />
+    <Compile Include="LINQ\OrderBy.cs" />
+    <Compile Include="LINQ\PairWise.cs" />
     <Compile Include="LINQ\Prepend.cs" />
     <Compile Include="LINQ\ToCSV.cs" />
     <Compile Include="LINQ\ToEnumerable.cs" />
