@@ -16,6 +16,7 @@ namespace SwissArmy.LINQ
                     yield return new Tuple<TSource, TSource>(prior, source);
                 }
                 prior = source;
+                i++;
             }
         }
     }
