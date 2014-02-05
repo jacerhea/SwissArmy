@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace SwissArmy.LINQ
 {
-    public static class OrderBy
+    public static partial class LinqExtended
     {
         public static IEnumerable<TSource> OrderBy<TSource, TKey>(this IEnumerable<TSource> list, Func<TSource, TKey> keySelector, ListSortDirection sort)
         {
