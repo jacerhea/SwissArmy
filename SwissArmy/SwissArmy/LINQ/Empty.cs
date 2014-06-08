@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SwissArmy.LINQ
 {
@@ -15,16 +16,7 @@ namespace SwissArmy.LINQ
         public static bool Empty<T>(this IEnumerable<T> source, Func<T, bool> predicate)
         {
             if (source == null) throw new ArgumentNullException("source");
-            bool any = false;
-            foreach (T item in source)
-            {
-                if (predicate(item))
-                {
-                    any = true;
-                    break;
-                }
-            }
-            return !any;
+            return  !source.Any(predicate);
         }
     }
 }
