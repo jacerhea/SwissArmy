@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy", "SwissArmy\SwissArmy.csproj", "{6C835BD2-5EA2-426F-A2D5-26D7E496B799}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "SwissArmy.Test\SwissArmy.Test.csproj", "{0C337384-0825-4F51-BB56-F60B6100AA4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{9111EEB2-7B27-4C35-9230-4671999E0AC0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Release Packages\SwissArmy.1.0.0.nupkg = ..\Release Packages\SwissArmy.1.0.0.nupkg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

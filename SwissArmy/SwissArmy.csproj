@@ -60,6 +60,7 @@
     <Compile Include="LINQ\ToHashSet.cs" />
     <Compile Include="LINQ\ToKeyValues.cs" />
     <Compile Include="LINQ\WhereIf.cs" />
+    <Compile Include="LINQ\Wrap.cs" />
     <Compile Include="Mapping\Mapper.cs" />
     <Compile Include="MD5Hash.cs" />
     <Compile Include="ObjectCloner.cs" />
