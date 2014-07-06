@@ -56,6 +56,7 @@
     <Compile Include="LINQ\Product.cs" />
     <Compile Include="LINQ\StartAt.cs" />
     <Compile Include="LINQ\StartWith.cs" />
+    <Compile Include="LINQ\TakeEvery.cs" />
     <Compile Include="LINQ\TakeLast.cs" />
     <Compile Include="LINQ\ToCSV.cs" />
     <Compile Include="LINQ\ToEnumerable.cs" />
