@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>SwissArmy</id>
+        <version>1.0.0</version>
+        <title>Swiss Army</title>
+        <authors>Jace Rhea</authors>
+        <projectUrl>https://github.com/jacerhea/SwissArmy</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A library of common utility functions and LINQ extensions.</description>
+        <summary>A library of common utility functions and LINQ extensions.</summary>
+        <releaseNotes>Version 1 release.</releaseNotes>
+        <copyright>2014</copyright>
+        <tags>utility linq</tags>
+    </metadata>
+</package>

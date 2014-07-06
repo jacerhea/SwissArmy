@@ -46,8 +46,10 @@
     <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="LINQ\Append.cs" />
     <Compile Include="LINQ\Cartesian.cs" />
+    <Compile Include="LINQ\Infinite.cs" />
     <Compile Include="LINQ\IterWithIndex.cs" />
     <Compile Include="LINQ\GroupList.cs" />
+    <Compile Include="LINQ\LINQExtended.cs" />
     <Compile Include="LINQ\OrderBy.cs" />
     <Compile Include="LINQ\PairWise.cs" />
     <Compile Include="LINQ\Prepend.cs" />
