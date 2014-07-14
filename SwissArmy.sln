@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4855CD
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site Items", "Site Items", "{D0AFF67A-12A6-464A-8497-75975EE72FBC}"
+	ProjectSection(SolutionItems) = preProject
+		SiteItems\SwissArmyKnife.ico = SiteItems\SwissArmyKnife.ico
+		SiteItems\SwissArmyKnife.png = SiteItems\SwissArmyKnife.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
