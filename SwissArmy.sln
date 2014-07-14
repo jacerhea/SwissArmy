@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "SwissArmy
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{9111EEB2-7B27-4C35-9230-4671999E0AC0}"
 	ProjectSection(SolutionItems) = preProject
+		Release Packages\SwissArmy.1.0.0.1.nupkg = Release Packages\SwissArmy.1.0.0.1.nupkg
 		..\Release Packages\SwissArmy.1.0.0.nupkg = ..\Release Packages\SwissArmy.1.0.0.nupkg
 	EndProjectSection
 EndProject
