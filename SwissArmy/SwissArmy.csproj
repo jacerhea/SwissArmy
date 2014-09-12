@@ -54,6 +54,8 @@
     <Compile Include="LINQ\IterWithIndex.cs" />
     <Compile Include="LINQ\GroupList.cs" />
     <Compile Include="LINQ\LINQExtended.cs" />
+    <Compile Include="LINQ\Mean.cs" />
+    <Compile Include="LINQ\Median.cs" />
     <Compile Include="LINQ\OrderBy.cs" />
     <Compile Include="LINQ\PairWise.cs" />
     <Compile Include="LINQ\Prepend.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property\PropertyExtractor.cs" />
     <Compile Include="Property\PropertyHelpers.cs" />
+    <Compile Include="StringStream.cs" />
     <Compile Include="XMLSerializer.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -56,6 +56,8 @@
   <ItemGroup>
     <Compile Include="LINQ\DistinctByTestFixture.cs" />
     <Compile Include="LINQ\EmptyTestFixture.cs" />
+    <Compile Include="LINQ\MeanTestFixture.cs" />
+    <Compile Include="LINQ\MedianTestFixture.cs" />
     <Compile Include="LINQ\ProductTestFixture.cs" />
     <Compile Include="LINQ\WrapTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
