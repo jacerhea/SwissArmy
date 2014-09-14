@@ -22,17 +22,24 @@ namespace SwissArmy.Test.LINQ
         public void SingleSetReturnsDefault()
         {
             var source = new List<int> { 5 };
-            var result = source.Mean();
+            var result = source.Median();
             Assert.AreEqual(5, result);
         }
 
         [TestMethod]
-        public void MultipleSetReturnsDefault()
+        public void MultipleEvenSetReturnsDefault()
         {
             var source = new List<int> { -10, 9, 8, 7, 6, 5, -4, 3, 2, -1 };
-            var result = source.Mean();
-            Assert.AreEqual(2.5, result);
-            Assert.AreEqual(2.5, result);
+            var result = source.Median();
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod]
+        public void MultipleOddSetReturnsDefault()
+        {
+            var source = new List<int> { -10, 9, 8, 7, 6, 5, -4, 3, 2 };
+            var result = source.Median();
+            Assert.AreEqual(5, result);
         }
     }
 }

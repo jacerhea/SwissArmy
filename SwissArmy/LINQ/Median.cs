@@ -1,16 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using SwissArmy.Extensions;
 
 namespace SwissArmy.LINQ
 {
     public static partial class LinqExtended
     {
-        public static int Median(this IEnumerable<int> source)
+        public static double Median(this IEnumerable<int> source)
         {
-            var list = source.ToList();
-            return list[list.Count/2];
+            if (source == null) throw new ArgumentNullException("source");
+            var list = source.OrderBy(i => i).ToList();
+            var count = list.Count;
+            if (count == 0)
+            {
+                return default(int);
+            }
+            else if (count.IsEven())
+            {
+                var midpoint = (int)Math.Floor(count / 2D) - 1;
+                return (list[midpoint] + list[(midpoint + 1)]) / (double)2;
+            }
+            else
+            {
+                return list[(int)Math.Floor(count / 2D)];
+            }
         }
     }
 }
