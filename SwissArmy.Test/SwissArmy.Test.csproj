@@ -54,6 +54,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Extensions\IntExtensionsTests.cs" />
+    <Compile Include="Extensions\LongExtensions.cs" />
     <Compile Include="LINQ\DistinctByTestFixture.cs" />
     <Compile Include="LINQ\EmptyTestFixture.cs" />
     <Compile Include="LINQ\MeanTestFixture.cs" />
@@ -71,6 +73,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

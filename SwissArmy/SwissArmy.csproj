@@ -48,6 +48,8 @@
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\LongExtensions.cs" />
+    <Compile Include="Extensions\UlongExtensions.cs" />
     <Compile Include="LINQ\Append.cs" />
     <Compile Include="LINQ\Cartesian.cs" />
     <Compile Include="LINQ\Infinite.cs" />
