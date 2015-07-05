@@ -7,7 +7,7 @@ namespace SwissArmy.LINQ
     {
         public static HashSet<T> ToHashSet<T>(this IEnumerable<T> source)
         {
-            if (source == null) throw new ArgumentNullException("source");
+            if (source == null) throw new ArgumentNullException(nameof(source));
             return new HashSet<T>(source);
         }
     }

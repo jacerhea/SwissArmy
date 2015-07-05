@@ -8,7 +8,7 @@ namespace SwissArmy.LINQ
     {
         public static int Product(this IEnumerable<int> source)
         {
-            if (source == null) throw new ArgumentNullException("source");
+            if (source == null) throw new ArgumentNullException(nameof(source));
             return source.Aggregate(1, (i, i1) => i*i1);
         }
     }

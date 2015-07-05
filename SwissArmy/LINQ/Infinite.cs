@@ -7,7 +7,7 @@ namespace SwissArmy.LINQ
     {
         public static IEnumerable<TSource> Infinite<TSource>(this IEnumerable<TSource> source)
         {
-            if (source == null) throw new ArgumentNullException("source");
+            if (source == null) throw new ArgumentNullException(nameof(source));
             while (true)
             {
                 foreach (var item in source)

@@ -8,7 +8,7 @@ namespace SwissArmy.LINQ
     {
         public static string ToCSV(this IEnumerable<string> collection)
         {
-            if (collection == null) throw new ArgumentNullException("collection");
+            if (collection == null) throw new ArgumentNullException(nameof(collection));
             return String.Join(",", collection.ToArray());
         }
     }

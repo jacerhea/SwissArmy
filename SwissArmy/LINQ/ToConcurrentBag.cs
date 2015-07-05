@@ -1,16 +1,15 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace SwissArmy.LINQ
 {
     public static partial class LinqExtended
     {
-       public static IEnumerable<T> TakeEvery<T>(this IEnumerable<T> source, int nStep)
+        public static ConcurrentBag<T> ToConcurrentBag<T>(this IEnumerable<T> source)
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
-            return source.Where((x, i) => i % nStep == 0);
-
+            return new ConcurrentBag<T>(source);
         }
     }
 }

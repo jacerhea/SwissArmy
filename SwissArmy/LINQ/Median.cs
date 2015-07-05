@@ -9,7 +9,7 @@ namespace SwissArmy.LINQ
     {
         public static double Median(this IEnumerable<int> source)
         {
-            if (source == null) throw new ArgumentNullException("source");
+            if (source == null) throw new ArgumentNullException(nameof(source));
             var list = source.OrderBy(i => i).ToList();
             var count = list.Count;
             if (count == 0)

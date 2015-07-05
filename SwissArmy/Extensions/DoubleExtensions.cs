@@ -14,8 +14,8 @@ namespace SwissArmy.Extensions
         /// Is the date today's date?
         /// </summary>
         /// <param name="date"></param>
+        /// <param name="date2"></param>
         /// <returns></returns>
-
         public static bool IsSameDate(this DateTime date, DateTime date2)
         {
             return date.Date == date2.Date;

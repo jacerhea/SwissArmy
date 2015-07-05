@@ -9,7 +9,7 @@ namespace SwissArmy.LINQ
     {
         public static IEnumerable<KeyValuePair<string, string>> ToKeyValuePairs(this NameValueCollection collection)
         {
-            if (collection == null) { throw new ArgumentNullException("collection"); }
+            if (collection == null) { throw new ArgumentNullException(nameof(collection)); }
             return collection.Cast<string>().Select(key => new KeyValuePair<string, string>(key, collection[key]));
         }
     }
