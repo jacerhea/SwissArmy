@@ -52,6 +52,7 @@
     <Compile Include="Extensions\UlongExtensions.cs" />
     <Compile Include="LINQ\Append.cs" />
     <Compile Include="LINQ\Cartesian.cs" />
+    <Compile Include="LINQ\GetByKeyOrDefault.cs" />
     <Compile Include="LINQ\Infinite.cs" />
     <Compile Include="LINQ\IterWithIndex.cs" />
     <Compile Include="LINQ\GroupList.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="LINQ\Mean.cs" />
     <Compile Include="LINQ\Median.cs" />
     <Compile Include="LINQ\Mode.cs" />
+    <Compile Include="LINQ\NullSafe.cs" />
     <Compile Include="LINQ\OrderBy.cs" />
     <Compile Include="LINQ\PairWise.cs" />
     <Compile Include="LINQ\Prepend.cs" />

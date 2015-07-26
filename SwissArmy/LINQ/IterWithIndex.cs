@@ -1,6 +1,6 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SwissArmy.LINQ
 {
@@ -8,12 +8,7 @@ namespace SwissArmy.LINQ
     {
         public static IEnumerable<Tuple<T, int>> IterWithIndex<T>(this IEnumerable<T> enumerable)
         {
-            var i = 0;
-            foreach (var obj in enumerable)
-            {
-                yield return new Tuple<T, int>(obj, i);
-                i++;
-            }
+            return enumerable.Select((arg1, i) => Tuple.Create(arg1, 1));
         }
     }
 }
