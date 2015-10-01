@@ -56,7 +56,6 @@
     <Compile Include="LINQ\Infinite.cs" />
     <Compile Include="LINQ\IterWithIndex.cs" />
     <Compile Include="LINQ\GroupList.cs" />
-    <Compile Include="LINQ\LINQExtended.cs" />
     <Compile Include="LINQ\MaxBy.cs" />
     <Compile Include="LINQ\Mean.cs" />
     <Compile Include="LINQ\Median.cs" />
