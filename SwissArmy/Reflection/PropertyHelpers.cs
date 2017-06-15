@@ -13,5 +13,11 @@ namespace SwissArmy.Property
 
             return memberExpression.Member.Name;
         }
+
+        //public static string GetStringValue(this PropertyInfo propertyInfo, object o)
+        //{
+        //    var value = propertyInfo.GetValue(o);
+        //    return value?.ToString();
+        //}
     }
 }
