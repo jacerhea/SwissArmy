@@ -65,7 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SwissArmy\SwissArmy.csproj">
+    <ProjectReference Include="..\..\src\SwissArmy\SwissArmy.csproj">
       <Project>{6c835bd2-5ea2-426f-a2d5-26d7e496b799}</Project>
       <Name>SwissArmy</Name>
     </ProjectReference>
