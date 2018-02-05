@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SwissArmyKnife.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SwissArmyKnife.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Collections\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

@@ -42,12 +42,14 @@
     <Compile Include="Attributes\AttributeExtractor.cs" />
     <Compile Include="BinarySerializer.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
+    <Compile Include="Extensions\IDictionaryExtensions.cs" />
     <Compile Include="Extensions\IListExtensions.cs" />
     <Compile Include="EmailValidator.cs" />
     <Compile Include="EnumHelper.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\IQueryableExtensions.cs" />
     <Compile Include="Extensions\LongExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\UlongExtensions.cs" />
@@ -63,9 +65,11 @@
     <Compile Include="LINQ\Mode.cs" />
     <Compile Include="LINQ\NullSafe.cs" />
     <Compile Include="LINQ\OrderBy.cs" />
+    <Compile Include="LINQ\Paginate.cs" />
     <Compile Include="LINQ\PairWise.cs" />
     <Compile Include="LINQ\Prepend.cs" />
     <Compile Include="LINQ\Product.cs" />
+    <Compile Include="LINQ\SkipLastN.cs" />
     <Compile Include="LINQ\StartAt.cs" />
     <Compile Include="LINQ\StartWith.cs" />
     <Compile Include="LINQ\TakeEvery.cs" />
