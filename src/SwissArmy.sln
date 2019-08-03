@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy", "SwissArmy\SwissArmy.csproj", "{6C835BD2-5EA2-426F-A2D5-26D7E496B799}"
 EndProject
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{9111EEB2-7B27-4C35-9230-4671999E0AC0}"
 	ProjectSection(SolutionItems) = preProject
 		Release Packages\SwissArmy.1.0.0.1.nupkg = Release Packages\SwissArmy.1.0.0.1.nupkg
@@ -25,6 +27,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site Items", "Site Items", 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "..\test\SwissArmy.Test\SwissArmy.Test.csproj", "{0C337384-0825-4F51-BB56-F60B6100AA4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy", "src\SwissArmy\SwissArmy.csproj", "{6C835BD2-5EA2-426F-A2D5-26D7E496B799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "tests\SwissArmy.Test\SwissArmy.Test.csproj", "{0C337384-0825-4F51-BB56-F60B6100AA4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Standard", "src\SwissArmyStandard\SwissArmy.Standard\SwissArmy.Standard.csproj", "{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,11 +47,17 @@ Global
 		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 31563e58-3a86-4471-bffb-b1d8abdb1af2
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {865A6611-EEBD-45F4-9672-26EC597A1114}
 	EndGlobalSection
 EndGlobal
