@@ -1,23 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy", "SwissArmy\SwissArmy.csproj", "{6C835BD2-5EA2-426F-A2D5-26D7E496B799}"
-EndProject
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{9111EEB2-7B27-4C35-9230-4671999E0AC0}"
 	ProjectSection(SolutionItems) = preProject
 		Release Packages\SwissArmy.1.0.0.1.nupkg = Release Packages\SwissArmy.1.0.0.1.nupkg
 		..\Release Packages\SwissArmy.1.0.0.nupkg = ..\Release Packages\SwissArmy.1.0.0.nupkg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4855CD75-3B2F-4138-A9F6-C9197365429C}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site Items", "Site Items", "{D0AFF67A-12A6-464A-8497-75975EE72FBC}"
@@ -26,12 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site Items", "Site Items", 
 		SiteItems\SwissArmyKnife.png = SiteItems\SwissArmyKnife.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "..\test\SwissArmy.Test\SwissArmy.Test.csproj", "{0C337384-0825-4F51-BB56-F60B6100AA4F}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy", "src\SwissArmy\SwissArmy.csproj", "{6C835BD2-5EA2-426F-A2D5-26D7E496B799}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Test", "tests\SwissArmy.Test\SwissArmy.Test.csproj", "{0C337384-0825-4F51-BB56-F60B6100AA4F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Standard", "src\SwissArmyStandard\SwissArmy.Standard\SwissArmy.Standard.csproj", "{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissArmy.Standard", "SwissArmy.Standard\SwissArmy.Standard.csproj", "{B510170A-E01C-45F4-A31C-F5779C41D05B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,24 +23,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6C835BD2-5EA2-426F-A2D5-26D7E496B799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C835BD2-5EA2-426F-A2D5-26D7E496B799}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C835BD2-5EA2-426F-A2D5-26D7E496B799}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C835BD2-5EA2-426F-A2D5-26D7E496B799}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C337384-0825-4F51-BB56-F60B6100AA4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52456FDA-F518-43FA-8DB3-B0F16CCE1B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B510170A-E01C-45F4-A31C-F5779C41D05B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B510170A-E01C-45F4-A31C-F5779C41D05B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B510170A-E01C-45F4-A31C-F5779C41D05B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B510170A-E01C-45F4-A31C-F5779C41D05B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(CodealikeProperties) = postSolution
-		SolutionGuid = 31563e58-3a86-4471-bffb-b1d8abdb1af2
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {865A6611-EEBD-45F4-9672-26EC597A1114}
 	EndGlobalSection
